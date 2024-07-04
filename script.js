@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(weather => {
                 console.log('Weather data:', weather);
-                alert(`Current weather in ${countryName}: ${weather.weather[0].description}, Temperature: ${(weather.main.temp - 273.15).toFixed(2)}°C`);
+                alert(`Current weather in ${countryName}:  ${weather.weather[0].description},  Temperature: ${(weather.main.temp - 273.15).toFixed(2)}°C`);
             })
             .catch(error => console.error('Error fetching weather data:', error));
     };
